@@ -62,5 +62,21 @@ function exercicio5() {
   let cod = Number(document.getElementById("cod").value);
   let q = Number(document.getElementById("q").value);
 
-  if
+  if (cod == codNike) {
+    document.getElementById("desc").innerHTML = decNike;
+    document.getElementById("preco").innerHTML = pNike;
+    document.getElementById("quant").innerHTML = q;
+    document.getElementById("vt").innerHTML = pNike * q;
+
+  } else if (cod == codAdidas) {
+    document.getElementById("desc").innerHTML = decAdidas;
+    document.getElementById("preco").innerHTML = pAdidas;
+    document.getElementById("quant").innerHTML = q;
+    document.getElementById("vt").innerHTML = pAdidas * q;
+  } else {
+    document.getElementById("desc").innerHTML = "O código digitado não existe";
+    document.getElementById("preco").innerHTML = "O código digitado não existe";
+    document.getElementById("quant").innerHTML = "O código digitado não existe";
+    document.getElementById("vt").innerHTML = "O código digitado não existe";
+  }
 }
