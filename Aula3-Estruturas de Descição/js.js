@@ -74,9 +74,9 @@ function exercicio5() {
     document.getElementById("quant").innerHTML = q;
     document.getElementById("vt").innerHTML = pAdidas * q;
   } else {
-    document.getElementById("desc").innerHTML = "O código digitado não existe";
-    document.getElementById("preco").innerHTML = "O código digitado não existe";
-    document.getElementById("quant").innerHTML = "O código digitado não existe";
-    document.getElementById("vt").innerHTML = "O código digitado não existe";
+    document.getElementById("desc").innerHTML = "Código Inválido";
+    document.getElementById("preco").innerHTML = "Código Inválido";
+    document.getElementById("quant").innerHTML = "Código Inválido";
+    document.getElementById("vt").innerHTML = "Código Inválido";
   }
 }
