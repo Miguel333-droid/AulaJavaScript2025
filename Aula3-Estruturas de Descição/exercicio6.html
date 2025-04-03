@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form>
+  
+        <table border="1">
+            <tr>
+              <th>Código Origem para o Frete</th>
+              <th>Procedência</th>
+              <th>Valor do Frete</th>
+            </tr> 
+      
+            <tr>
+              <th>1</th>
+              <th>Sul</th>
+              <th>10,00</th>
+            </tr>
+      
+            <tr>
+                <th>2</th>
+                <th>Norte</th>
+                <th>50,00</th>
+              </tr>
+
+              <tr>
+                <th>3 ou 5</th>
+                <th>Nordeste</th>
+                <th>30,00</th>
+              </tr>
+
+              <tr>
+                <th>6 até 9</th>
+                <th>Sudeste</th>
+                <th>40,00</th>
+              </tr>
+
+              <tr>
+                <th>10 até 15 ou 25 até 30</th>
+                <th>Centro Oeste</th>
+                <th>85,00</th>
+              </tr>
+
+            
+          </table>
+          <p></p><br>
+
+          Digite o código de Origem: 
+          <input type="number" id="cod" min="0" max="30"><br><p></p>
+
+          Digite a quantidade a ser comprada:
+          <input type="number"  id="quant" min="0" max="100"><br><p></p>
+
+          Digite o Preço do Produto:
+          <input type="number"  id="p" min="0" max="10000"><br><p></p>
+
+          <input type="button" value="Processar" onclick="exercicio6()"><br><p></p>
+
+
+          <table border="1">
+          <tr>
+            <th>Código Digitado</th>
+            <th>Preço da Venda</th>
+            <th>Valor do SubTotal</th>
+            <th>Valor do Frete</th>
+            <th>Valor Total</th>
+          </tr> 
+
+          <tr>
+            <th id="codD"></th>
+            <th id="PV"></th>
+            <th id="VST"></th>
+            <th id="VF"></th>
+            <th id="VT"></th>
+          </tr> 
+    
+
+
+        </table>
+
+
+    </form>
+
+    <script src="js.js"></script>
+</body>
+</html>

@@ -80,3 +80,57 @@ function exercicio5() {
     document.getElementById("vt").innerHTML = "Código Inválido";
   }
 }
+
+function exercicio6() {
+    const VFSul = 10;
+    const VFNorte = 50;
+    const VFNordeste = 30;
+    const VFSudeste = 40;
+    const VFCO = 85;
+
+    let cod = Number(document.getElementById("cod").value);
+    let quant = Number(document.getElementById("quant").value);
+    let p = Number(document.getElementById("p").value);
+
+
+    if (cod == 1) {
+        document.getElementById("codD").innerHTML = cod;
+        document.getElementById("PV").innerHTML = p;
+        document.getElementById("VST").innerHTML = quant * p;
+        document.getElementById("VF").innerHTML = VFSul;
+        document.getElementById("VT").innerHTML = quant * p + VFSul;
+    } else if(cod == 2) {
+        document.getElementById("codD").innerHTML = cod;
+        document.getElementById("PV").innerHTML = p;
+        document.getElementById("VST").innerHTML = quant * p;
+        document.getElementById("VF").innerHTML = VFNorte;
+        document.getElementById("VT").innerHTML = quant * p + VFNorte;
+
+    } else if (cod == 3 || cod == 5){
+        document.getElementById("codD").innerHTML = cod;
+        document.getElementById("PV").innerHTML = p;
+        document.getElementById("VST").innerHTML = quant * p;
+        document.getElementById("VF").innerHTML = VFNordeste;
+        document.getElementById("VT").innerHTML = quant * p + VFNordeste;
+
+    } else if(cod >= 6 && cod <=9) {
+        document.getElementById("codD").innerHTML = cod;
+        document.getElementById("PV").innerHTML = p;
+        document.getElementById("VST").innerHTML = quant * p;
+        document.getElementById("VF").innerHTML = VFSudeste;
+        document.getElementById("VT").innerHTML = quant * p + VFSudeste;
+
+    } else if(cod >= 10 && cod <= 15 || cod >= 25 && cod <=30) {
+        document.getElementById("codD").innerHTML = cod;
+        document.getElementById("PV").innerHTML = p;
+        document.getElementById("VST").innerHTML = quant * p;
+        document.getElementById("VF").innerHTML = VFCO;
+        document.getElementById("VT").innerHTML = quant * p + VFCO;
+
+    }else {
+        alert("O codigo digitado é invalido!!");
+    } 
+
+}
+
+    
